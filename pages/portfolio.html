@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Léonie</title>
+  <meta name="description" content="Découvrez les projets de design graphique de Léonie Gourichon : affiches, photographies, vidéos, identités visuelles." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Gloria+Hallelujah&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/logo-01.png" alt="Léonie Gourichon logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p>Bienvenue sur mon portfolio. Vous y découvrirez une sélection de projets qui illustrent mon parcours, mes compétences et ma passion pour le design.</p>
+    </div>
+  </header>
+
+  <!-- ===== PROJETS ===== -->
+  <section>
+    <div class="container">
+
+      <!-- Filtres -->
+      <div class="portfolio-filters">
+<button class="filter-btn" data-filter="Identité visuelle">Identité visuelle</button>
+<button class="filter-btn" data-filter="Dessin & illustration">Dessin & illustration</button>
+<button class="filter-btn" data-filter="Photographie">Photographie</button>
+<button class="filter-btn" data-filter="Vidéo & montage">Vidéo & montage</button>
+<button class="filter-btn" data-filter="Motion design">Motion design</button>
+<button class="filter-btn" data-filter="Affiche">Affiche</button>
+      </div>
+
+      <!-- Grille projets -->
+      <div class="portfolio-grid">
+
+        <a href="#" class="project-card reveal" data-category="Identité visuelle" data-project="micro-rezo" onclick="openModal('micro-rezo'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/panneau micro rezo.png" alt="Micro rezo" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Refonte de logo</p>
+            <h3 class="project-card-title">Micro rezo</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Identité visuelle" data-project="armor-events" onclick="openModal('armor-events'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/stickers ael.png" alt="Armor Events Location" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Identité visuelle</p>
+            <h3 class="project-card-title">Armor Events Location</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Affiche" data-project="aravis-bus" onclick="openModal('aravis-bus'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/panneau aravis.png" alt="Aravis bus" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Affiche</p>
+            <h3 class="project-card-title">Aravis bus</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Dessin & illustration" data-project="orano" onclick="openModal('orano'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/mockup orano.png" alt="Orano" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Refonte de plan</p>
+            <h3 class="project-card-title">Orano</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Dessin & illustration" data-project="carte-voeux" onclick="openModal('carte-voeux'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/cartevoeux.PNG" alt="Carte de voeux 2026" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Illustration</p>
+            <h3 class="project-card-title">Carte de vœux 2026</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Dessin & illustration" data-project="municipales" onclick="openModal('municipales'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/municipales 1.png" alt="Campagne de communication" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Campagne de communication</p>
+            <h3 class="project-card-title">Municipales</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Identité visuelle" data-project="circuit-remparts" onclick="openModal('circuit-remparts'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/cdr1.png" alt="Circuit des remparts" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Campagne de communication</p>
+            <h3 class="project-card-title">Circuit des remparts</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Photographie" data-project="sunshine" onclick="openModal('sunshine'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/photo1.png" alt="Photographie" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Photographie</p>
+            <h3 class="project-card-title">"The Sunshine"</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Dessin & illustration" data-project="donald" onclick="openModal('donald'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/donald.png" alt="Donald" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Collage</p>
+            <h3 class="project-card-title">Donald</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Dessin & illustration" data-project="graphiteine" onclick="openModal('graphiteine'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/invitgraphit.png" alt="Graphiteine anniversaire" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Invitation</p>
+            <h3 class="project-card-title">10 ans de Graphitéine</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Dessin & illustration" data-project="fusain" onclick="openModal('fusain'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/fusain.png" alt="Fusain" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Illustration</p>
+            <h3 class="project-card-title">Fusain</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Photographie" data-project="reflet" onclick="openModal('reflet'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/casque.png" alt="Photographie" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Photographie</p>
+            <h3 class="project-card-title">Exposition "Reflet" et "Nature"</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Vidéo & montage" data-project="hackathon" onclick="openModal('hackathon'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="./../assets/hakaton.png" alt="Hackathon" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Vidéo & montage</p>
+            <h3 class="project-card-title">Hackathon 28 novembre</h3>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" data-category="Motion design" data-project="animation-logo" onclick="openModal('animation-logo'); return false;">
+          <div class="project-card-img-wrap">
+            <img src="https://framerusercontent.com/images/ZuA8BegaJ0YssLPhjLe99Q6Uc.png" alt="Motion design" />
+            <div class="project-card-overlay"><span class="overlay-icon">→</span></div>
+          </div>
+          <div class="project-card-body">
+            <p class="project-card-tag">Motion design</p>
+            <h3 class="project-card-title">Animation logo</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODALE PROJET ===== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()" aria-label="Fermer">✕</button>
+
+      <div class="modal-gallery">
+        <!-- images injectées par JS -->
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-meta">
+          <span class="modal-tag"></span>
+          <span class="modal-year"></span>
+        </div>
+        <h2 class="modal-title"></h2>
+        <p class="modal-desc"></p>
+
+        <p class="modal-tools-label">Outils utilisés</p>
+        <div class="modal-tools"></div>
+
+        <a href="#" class="modal-link" target="_blank">
+          Voir le projet
+          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="./../index.html" class="footer-logo">
+          <img src="./../assets/logo-01.png" alt="Logo Léonie Gourichon" />
+        </a>
+        <nav class="footer-links">
+          <a href="./../index.html">Accueil</a>
+          <a href="./pages/competences.html">Compétences</a>
+          <a href="./pages/portfolio.html">Portfolio</a>
+          <a href="./pages/contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Léonie Gourichon — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="./../js/main.js"></script>
+  <script src="./../js/modal.js"></script>
+</body>
+</html>
